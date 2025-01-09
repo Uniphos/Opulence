@@ -8,11 +8,12 @@ const NavBar = () => {
     }
 
     const handleContactUs = () => {
-        window.location.href = '/contact-us';
+        window.location.href = '/Opulence/#/contact-us';
     }
     const handleServiceClick = (e) => {
         const id = e.target.id;
-        window.location.href = '/services/' + id;
+        setActive(false);
+        window.location.href = '/Opulence/#/services/' + id;
     }
 
     return (

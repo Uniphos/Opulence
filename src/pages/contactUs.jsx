@@ -21,6 +21,7 @@ const ContactUs = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('form submitted');
+        alert('form submitted');
     }
 
     const handleChange = (event) => {

@@ -33,3 +33,31 @@
 .line{
     width: 85%;
 }
+
+@media(max-width: 1070px) {
+    .middle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 40px;
+        width: 99.2vw;
+        padding-bottom: 100px;
+    }
+    .description{
+        padding-left: 0px;
+    }
+    .line{
+        width: 100%;
+    }
+    .middleImage img{
+        width: 100%;
+        height: 100%;
+    }
+    .middleInfo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

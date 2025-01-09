@@ -1,8 +1,17 @@
 import React, { useState } from 'react';
 import '../../style/navBar.css';
 
+import menuButton from '../../assets/menu.png';
+
 const NavBar = () => {
     const [active, setActive] = useState(false);
+    const [menuActive, setMenuActive] = useState(false);
+
+    const [webServices, setWebServices] = useState(false);
+    const [blockchainSolutions, setBlockchainSolutions] = useState(false);
+    const [digitalMarketing, setDigitalMarketing] = useState(false);
+    const [appDevelopment, setAppDevelopment] = useState(false);
+
     const hoverDisplay = () => {
         setActive(true);
     }
@@ -30,6 +39,63 @@ const NavBar = () => {
                     <button onClick={handleContactUs}>Contact Us</button>
                     </div>
                 </div>
+                <div className='menu'>
+                    <img src={menuButton} alt='menu button' onClick={() => setMenuActive(!menuActive)}/>
+                </div>
+            </div>
+            <div className={menuActive ? 'activeMenu' : 'hiddenNavLinks'}>
+                <button onClick={handleContactUs}>Contact Us</button>
+                <div className='menuLinks' onClick={() => setWebServices(!webServices)}>
+                    <p>Web Services</p>
+                    <p>{webServices ? "▲" : "▼"}</p>
+                </div>
+                {webServices && (
+                    <div className='subMenu'>
+                        <p id="Website-Development" onClick={ handleServiceClick }>Website Development</p>
+                        <p id="Web-Maintenance" onClick={ handleServiceClick }>Web Maintenance</p>
+                        <p id="Web-Optimization" onClick={ handleServiceClick }>Web Optimization</p>
+                        <p id="Web-Security" onClick={ handleServiceClick }>Web Security</p>
+                    </div>
+                )}
+                <div className='menuLinks' onClick={() => setBlockchainSolutions(!blockchainSolutions)}>
+                    <p>Blockchain Solutions</p>
+                    <p>{blockchainSolutions ? "▲" : "▼"}</p>
+                </div>
+                {blockchainSolutions && (
+                    <div className='subMenu'>
+                        <p id="Blockchain-Development" onClick={ handleServiceClick }>Blockchain Development</p>
+                        <p id="Blockchain-Consulting" onClick={ handleServiceClick }>Blockchain Consulting</p>
+                        <p id="NFT-Solutions" onClick={ handleServiceClick }>NFT-Solutions</p>
+                    </div>
+                )}
+                <div className='menuLinks' onClick={() => setDigitalMarketing(!digitalMarketing)}>
+                    <p>Digital Marketing</p>
+                    <p>{digitalMarketing ? "▲" : "▼"}</p>
+                </div>
+                {digitalMarketing && (
+                    <div className='subMenu'>
+                        <p id="SEO-Optimization" onClick={ handleServiceClick }>SEO Optimization</p>
+                        <p id="Social-Media-Management" onClick={ handleServiceClick }>Social Media Management</p>
+                        <p id="Content-Creation" onClick={ handleServiceClick }>Content Creation</p>
+                        <p id="Paid-Advertising" onClick={ handleServiceClick }>Paid Advertising</p>
+                        <p id="Email-Marketing" onClick={ handleServiceClick }>Email Marketing</p>
+                    </div>
+                )}
+                <div className='menuLinks' onClick={() => setAppDevelopment(!appDevelopment)}>
+                    <p>App Development</p>
+                    <p>{appDevelopment ? "▲" : "▼"}</p>
+                </div>
+                {appDevelopment && (
+                    <div className='subMenu'>
+                        <p id="Custom-Mobile-App-Development" onClick={ handleServiceClick }>Custom Mobile App Development</p>
+                        <p id="UI-UX-Design" onClick={ handleServiceClick }>UI/UX Design</p>
+                        <p id="App-Integration-Services" onClick={ handleServiceClick }>App Integration Services</p>
+                        <p id="App-Maintenance-and-Updates" onClick={ handleServiceClick }>App Maintenance and Updates</p>
+                        <p id="Progressive-Web-Apps" onClick={ handleServiceClick }>Progressive Web Apps</p>
+                        <p id="App-Security-Services" onClick={ handleServiceClick }>App Security Services</p>
+                        <p id="App-Testing-and-Quality-Assurance" onClick={ handleServiceClick }>App Testing and Quality Assurance</p>
+                    </div>
+                )}
             </div>
             <div className={active ? 'activeNavLinks' : 'hiddenNavLinks'} onMouseOver={hoverDisplay} onMouseLeave={() => setActive(false)}>
                 <div className='masterContainer'>

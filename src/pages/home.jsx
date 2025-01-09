@@ -5,7 +5,7 @@ import '../style/home.css';
 const Home = () => {
 
     const handleContactUs = () => {
-        window.location.href = '/contact-us';
+        window.location.href = '/Opulence/#/contact-us';
     }
 
     return (
@@ -83,8 +83,10 @@ const Home = () => {
                                 to ensure long-term success.</p>
                         </div>
                         <div className='infoFAQ'>
-                            <h1> </h1>
-                        <h3>Are your solutions scalable?</h3>
+                            <div className='hideMobile'>
+                                <h1> </h1>
+                            </div>
+                            <h3>Are your solutions scalable?</h3>
                             <p>Absolutely! Our services are designed to grow with your business. 
                                 From scalable web designs to blockchain networks, we ensure your solution adapts to increasing demands.</p>
                             <h3>How do I get started?</h3>

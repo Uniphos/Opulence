@@ -38,6 +38,8 @@
     color: #011589;
 }
 
+
+
 .contactInfo{
     display: flex;
     flex-direction: column;
@@ -58,4 +60,35 @@
     flex-direction: column;
     gap: 10px;
     padding-bottom: 3%;
+}
+
+.contactUsContainer button{
+    background-color: #011589;
+    color: white;
+}
+
+@media(max-width: 1070px) {
+    
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .contactInfo{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 90%;
+        margin: auto;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 90%;
+        margin: auto;
+    }
+
 }

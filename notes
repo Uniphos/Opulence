@@ -1,0 +1,71 @@
+<table>
+                        <tr className="spacedRow">
+                            <th>Web Services</th>
+                            <th>Blockchain Solutions</th>
+                            <th>App Development</th>
+                            <th>Digital Marketing</th>
+                        </tr>
+                        <tr className="spacedRow">
+                            <td id="Website-Development" onClick={ handleServiceClick }>Website Development</td>
+                            <td id="Blockchain-Development" onClick={ handleServiceClick }>Blockchain Development</td>
+                            <td id="Custom-Mobile-App-Development" onClick={ handleServiceClick }>Custom Mobile App Development</td>
+                            <td id="Search-Engine-Optimization" onClick={ handleServiceClick }>Search Engine Optimization (SEO)</td>
+                        </tr>
+                        <tr className="spacedRow">
+                            <td id='Web-Maintenance' onClick={ handleServiceClick }>Web Maintenance</td>
+                            <td id='Blockchain-Consulting' onClick={ handleServiceClick }>Blockchain Consulting</td>
+                            <td id='UI/UX-Design' onClick={ handleServiceClick }>UI/UX Design</td>
+                            <td id='Social-Media-Marketing' onClick={ handleServiceClick }>Social Media Marketing</td>
+                        </tr>
+                        <tr className="spacedRow">
+                            <td id='Web-Optimization' onClick={ handleServiceClick }>Web Optimization</td>
+                            <td id='NFT-Solutions' onClick={ handleServiceClick }>NFT-Solutions</td>
+                            <td id='App-Integration-Services' onClick={ handleServiceClick }>App Integration Services</td>
+                            <td id='Content-Marketing' onClick={ handleServiceClick }>Content Marketing</td>
+                        </tr>
+                        <tr className="spacedRow">
+                            <td id='Web-Security' onClick={ handleServiceClick }>Web Security</td>
+                            <th></th>
+                            <td id='App-Maintenance-and-Updates' onClick={ handleServiceClick }>App Maintenance and Updates</td>
+                            <td id='Paid-Advertising' onClick={ handleServiceClick }>Paid Advertising (PPC)</td>
+                        </tr>
+                        <tr className="spacedRow">
+                            <th></th>
+                            <th></th>
+                            <td id='Progressive-Web-Apps' onClick={ handleServiceClick }>Progressive Web Apps (PWAs)</td>
+                            <td id='Email-Marketing' onClick={ handleServiceClick }>Email Marketing</td>
+                        </tr>
+                        <tr className="spacedRow">
+                            <th></th>
+                            <th></th>
+                            <td id='App-Security-Services' onClick={ handleServiceClick }>App Security Services</td>
+                            <th></th>
+                        </tr>
+                        <tr className="spacedRow">
+                            <th></th>
+                            <th></th>
+                            <td id='App-Testing-and-Quality-Assurance' onClick={ handleServiceClick }>App Testing and Quality Assurance</td>
+                            <th></th>
+                        </tr>
+                    </table>
+
+                    <table className='secondTable'>
+                        <tr className="spacedRow">
+                            <th>App Development</th>
+                        </tr>
+                        <tr className="spacedRow">
+                            <td id='Custom-Mobile-App-Development' onClick={ handleServiceClick }>Custom Mobile App Development</td>
+                            <td id='App-Integration-Services' onClick={ handleServiceClick }>App Integration Services</td>
+                        </tr>
+                        <tr className="spacedRow">
+                            <td id='UI-UX-Design' onClick={ handleServiceClick }>UI/UX Design</td>
+                            <td id='App-Security-Services' onClick={ handleServiceClick }>App Security Services</td>
+                        </tr>
+                        <tr className="spacedRow">
+                            <td id='App-Maintenance-and-Updates' onClick={ handleServiceClick }>App Maintenance and Updates</td>
+                            <td id='Progressive-Web-Apps' onClick={ handleServiceClick }>Progressive Web Apps (PWAs)</td>
+                        </tr>
+                        <tr className="spacedRow">
+                            <td id='App-Testing-and-Quality-Assurance' onClick={ handleServiceClick }>App Testing and Quality Assurance</td>
+                        </tr>
+                    </table>

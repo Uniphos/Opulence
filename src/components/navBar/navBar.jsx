@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import '../../style/navBar.css';
 
 const NavBar = () => {
-    const [active, setActive] = useState(true);
+    const [active, setActive] = useState(false);
     const hoverDisplay = () => {
-        setActive(false);
+        setActive(true);
     }
 
     const handleContactUs = () => {
